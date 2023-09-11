@@ -1,0 +1,14 @@
+{
+  "name": "page-object",
+  "version": "1.0.0",
+  "description": "Page object with cypress",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Juan Fernandez",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.1.0"
+  }
+}
