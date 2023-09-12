@@ -1,5 +1,11 @@
 class LoginPage{
 
+    elements={
+        usernameInput : () => cy.get("#user-name"),
+        passwordInput : () =>  cy.get("#password"),
+        loginButton : () =>  cy.get("#login-button")
+    }
+
     abrirPaginaWeb(){
         beforeEach(()=>{
             cy.visit("https://www.saucedemo.com/v1/index.html")
@@ -8,15 +14,15 @@ class LoginPage{
     }
 
     digitarUsuario(usuario){
-        cy.get("#user-name").type(usuario)
+        this.elements.usernameInput().type(usuario)
     }
 
     digitarClave(clave){
-        cy.get("#password").type(clave)
+        this.elements.passwordInput().type(clave)
     }
 
     clickParaAutenticarse(){
-        cy.get("#login-button").click()
+        this.elements.loginButton().click()
     }
 
 }

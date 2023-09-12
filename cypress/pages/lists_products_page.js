@@ -1,9 +1,15 @@
 class ListsProductsPage{
 
+    
+    elements={
+        listaProductosComprar : () => cy.get("#item_4_title_link"),
+        agregarCarritoButton : () =>  cy.get(".btn_primary")
+    }
+
 
     agregarProductoCarrito(){
-        cy.get("#item_4_title_link").click()
-        cy.get(".btn_primary").click()
+        this.elements.listaProductosComprar().click()
+        this.elements.agregarCarritoButton().click()
     }
 
 }

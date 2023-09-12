@@ -1,14 +1,22 @@
 class CheckoutPage{
 
+    elements={
+        nombreUsuarioInput : () => cy.get("#first-name"),
+        apellidoInput : () =>  cy.get("#last-name"),
+        codigoPostalInput : () =>  cy.get("#postal-code"),
+        registarButton : () =>  cy.get(".btn_primary"),
+        confirmarDatosButton : () =>  cy.get(".btn_action")
+    }
+
     diligenciarInfoComprador(){
-        cy.get("#first-name").type("Juan")
-        cy.get("#last-name").type("Fernandez")
-        cy.get("#postal-code").type("0500022")
-        cy.get(".btn_primary").click()
+        this.elements.nombreUsuarioInput().type("Juan")
+        this.elements.apellidoInput().type("Fernandez")
+        this.elements.codigoPostalInput().type("0500022")
+        this.elements.registarButton().click()
     }
 
     confirmarDatosCompra(){
-        cy.get(".btn_action").click()
+        this.elements.confirmarDatosButton().click()
     }
 
 
