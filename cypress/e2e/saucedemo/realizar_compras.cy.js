@@ -1,7 +1,7 @@
 /// <reference types="cypress"/>
 import login_page from '../../pages/login_page';
 import lists_products_page from '../../pages/lists_products_page'
-import product_page from '../../pages/product_page'
+import product_page from '../../pages/saucedemo/product_page'
 import checkout_page from '../../pages/checkout_page'
 
 
