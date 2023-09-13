@@ -1,4 +1,10 @@
+import utilidades from '../../utils/utilidades'
+
 class CheckoutPage{
+
+    constructor(){
+        this.utilidad = new utilidades();
+    }
 
     elements={
         firstNameInput : () => cy.get("#input-payment-firstname"),
@@ -24,7 +30,7 @@ class CheckoutPage{
     diligenciarPersonalDetails(){
         this.elements.firstNameInput().type("Juan")
         this.elements.lastNameInput().type("Fernandez")
-        this.elements.emailInput().type("wwqwwqwse@gmail.com")
+        this.elements.emailInput().type(this.utilidad.generarCorreoAleatorio())
         this.elements.telephoneInput().type("323232233")
         this.elements.passwordInput().type("12345678")
         this.elements.passwordConfirmInput().type("12345678")
@@ -42,11 +48,13 @@ class CheckoutPage{
     }
 
     aceptarTermsCondictions(){
+        //SELECCIONAR LOS CHECK DE MANERA INDEPENDIENTE
         //this.elements.privacyPolicyCheck().check({force: true})
         //this.elements.termsCheck().check({force: true})
+
+        //SELECCIONAR LOS CHECK EN GRUPO
         this.elements.termsCheck().type("{pageup}")
         this.elements.termsCheckbox().check({force: true})   
-        cy.wait(1000)
     }
 
     guardarFormulario(){

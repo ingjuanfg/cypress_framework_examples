@@ -22,9 +22,6 @@ class HomePage{
         this.elements.celularImagen().invoke('show').click()
     }
 
-
-
-
 }
 
 export default HomePage;
