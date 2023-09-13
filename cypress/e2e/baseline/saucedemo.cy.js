@@ -1,7 +1,7 @@
 /// <reference types="cypress"/>
 
 describe('Ejemplo Basico - Cypress', () => {
-  it.only('passes', () => {
+  it('passes', () => {
     //Autenticacion
     cy.visit('https://www.saucedemo.com/v1/index.html')
     cy.get("#user-name").type("standard_user")
@@ -33,4 +33,16 @@ describe('Ejemplo Basico - Cypress', () => {
     //cy.get('.pony_express').should('have.attr', 'src', '/img/pony-express.png')
 
   })
+
+  it.only('Utilizar teclado en login', () => {
+    //Autenticacion
+    cy.visit('https://www.saucedemo.com/v1/index.html')
+    cy.get("#user-name").type("standard_user").tab().
+    type("secret_sauce{enter}")
+  })
+
+  
+
 })
+
+require('cypress-plugin-tab')
