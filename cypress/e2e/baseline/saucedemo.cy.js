@@ -34,13 +34,20 @@ describe('Ejemplo Basico - Cypress', () => {
 
   })
 
-  it.only('Utilizar teclado en login', () => {
+  it('Utilizar teclado en login', () => {
     //Autenticacion
     cy.visit('https://www.saucedemo.com/v1/index.html')
     cy.get("#user-name").type("standard_user").tab().
     type("secret_sauce{enter}")
   })
 
+
+  it.only('Escribir utilizando comando personalizado', () => {
+    cy.visit('https://www.saucedemo.com/v1/index.html')
+    cy.ingresar_datos("#user-name", "standard_user")
+    cy.ingresar_datos("#password","secret_sauce")
+    cy.get("#login-button").click()
+  })
   
 
 })
