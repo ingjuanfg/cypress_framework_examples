@@ -1,0 +1,1 @@
+export const TITULO_LABEL = '.product_label';
