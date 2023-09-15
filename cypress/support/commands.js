@@ -23,3 +23,9 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+
+//Este command me permite recibir 2 parametros, selector y texto para invocarlo y asi sea mas legible o entendible la accion que quiero realizar.
+Cypress.Commands.add('escribirEnCampo', (selector, texto) => { 
+    cy.get(selector).type(texto)
+})

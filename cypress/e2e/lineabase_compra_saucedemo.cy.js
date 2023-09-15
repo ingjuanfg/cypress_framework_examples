@@ -1,7 +1,11 @@
 /// <reference types="cypress"/>
 
 describe('Ejemplo Basico - Cypress', () => {
-  it.only('passes', () => {
+
+//Este ejemplo es la linea base para luego tomarlo y hacer los ajustes necesarios
+//utilizando Page Object Model y Cypress
+
+  it('Compra Producto en Saucedemo', () => {
     //Autenticacion
     cy.visit('https://www.saucedemo.com/v1/index.html')
     cy.get("#user-name").type("standard_user")
@@ -25,12 +29,6 @@ describe('Ejemplo Basico - Cypress', () => {
 
     //Asersion
     cy.get('.complete-header').should('contain.text','THANK YOU FOR YOUR ORDER')
-
-    //Asersion
-    //cy.get('img.pony_express').should('have.attr', 'src', '/img/pony-express.png')
-
-    //Asersion
-    //cy.get('.pony_express').should('have.attr', 'src', '/img/pony-express.png')
-
   })
+  
 })
