@@ -10,9 +10,6 @@ class CheckoutPage{
     confirmarDatosCompra(){
         cy.get(".btn_action").click()
     }
-
-
 }
-
 
 export default CheckoutPage;

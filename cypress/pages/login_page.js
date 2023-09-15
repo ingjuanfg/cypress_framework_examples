@@ -18,7 +18,6 @@ class LoginPage{
     clickParaAutenticarse(){
         cy.get("#login-button").click()
     }
-
 }
 
 export default LoginPage;

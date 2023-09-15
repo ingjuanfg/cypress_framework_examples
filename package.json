@@ -1,7 +1,7 @@
 {
   "name": "page-object",
   "version": "1.0.0",
-  "description": "Page object with cypress",
+  "description": "Rama para Cypress usando patrón Page Object Model - Primera  Implementación",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,6 +9,8 @@
   "author": "Juan Fernandez",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^13.1.0"
+    "cypress": "^13.1.0",
+    "cypress-plugin-tab": "^1.0.5",
+    "cypress-xpath": "^2.0.1"
   }
 }
