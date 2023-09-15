@@ -1,6 +1,6 @@
 /// <reference types="cypress"/>
-const autenticacion = require('../../tasks/saucedemo_v2/autenticacion');
-const validacion = require('../../questions/screenplay_v2/validacion_login')
+const autenticacion = require('../tasks/autenticacion');
+const validacion = require('../questions/validacion_login')
 
 
 describe('Screenplay con Cypress Version 2', () => {

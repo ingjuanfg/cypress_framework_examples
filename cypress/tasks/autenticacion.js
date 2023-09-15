@@ -1,4 +1,4 @@
-const login_page = require('../../pages/saucedemo_v2/login_page')
+const login_page = require('../pages/login_page')
 
 Cypress.Commands.add("loginInSaucedemo", (usuario, clave) => {
     cy.get(login_page.USERNAME_INPUT).type(usuario)
