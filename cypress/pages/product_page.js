@@ -9,7 +9,6 @@ class ProductPage{
         this.elements.productoComprarLabel().click()
         this.elements.abrirCarritoButton().click()
     }
-
 }
 
 export default ProductPage;

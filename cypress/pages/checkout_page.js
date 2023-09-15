@@ -8,19 +8,16 @@ class CheckoutPage{
         confirmarDatosButton : () =>  cy.get(".btn_action")
     }
 
-    diligenciarInfoComprador(){
-        this.elements.nombreUsuarioInput().type("Juan")
-        this.elements.apellidoInput().type("Fernandez")
-        this.elements.codigoPostalInput().type("0500022")
+    diligenciarInfoComprador(nombre, apellido, codigoPostal){
+        this.elements.nombreUsuarioInput().type(nombre)
+        this.elements.apellidoInput().type(apellido)
+        this.elements.codigoPostalInput().type(codigoPostal)
         this.elements.registarButton().click()
     }
 
     confirmarDatosCompra(){
         this.elements.confirmarDatosButton().click()
     }
-
-
 }
-
 
 export default CheckoutPage;
