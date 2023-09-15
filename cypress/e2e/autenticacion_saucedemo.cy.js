@@ -1,7 +1,7 @@
 /// <reference types="cypress"/>
 
-import login_task from '../../tasks/login_task'
-import login_question from '../../questions/login_question'
+import login_task from '../tasks/login_task'
+import login_question from '../questions/login_question'
 
 
 describe('Screenplay con Cypress', () => {

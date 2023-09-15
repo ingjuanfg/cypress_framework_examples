@@ -1,4 +1,4 @@
-import lists_products_page from '../pages/saucedemo/lists_products_page'
+import lists_products_page from '../pages/lists_products_page'
 
 class LoginQuestion{
 

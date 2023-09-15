@@ -1,4 +1,4 @@
-import login_page from '../pages/saucedemo/login_page';
+import login_page from '../pages/login_page';
 
 class LoginTask{
     constructor(){
