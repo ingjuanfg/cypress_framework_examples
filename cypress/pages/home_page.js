@@ -13,15 +13,16 @@ class HomePage{
         })
     }
 
+    //Selección de opciones usando Hover por medio del trigger
     seleccionarCategoriaTrigger(){
         this.elements.categoriasButton().trigger('mouseover')
         this.elements.lgOpcion().click()
     }
 
+    //Selección de elementos usando Hover por medio del Invoke
     seleccionarCategoriaInvoke(){
         this.elements.celularImagen().invoke('show').click()
     }
-
 }
 
 export default HomePage;

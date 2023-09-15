@@ -12,9 +12,7 @@ class ProductoPage{
     comprarProductoAhora(){
         this.elements.comprarAhoraButton().click()
     }
-
 }
 
 export default ProductoPage;
 require('cypress-xpath');
-

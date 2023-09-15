@@ -4,7 +4,6 @@ class Utilidades{
         this.dominios = ["gmail.com","outlook.com","yahoo.es"]
     }
 
-
     generarCorreoAleatorio(){
         const dominios = ["gmail.com","outlook.com","yahoo.es"];
         const nombreUsuario = Math.random().toString(36).substring(2,10);
