@@ -15,8 +15,8 @@ Este proyecto esta creado con fines educativos. Contiene ejemplos desde los más
 
 
 ### Las páginas a usar son
-[https://www.saucedemo.com/v1/index.html](https://www.saucedemo.com/v1/index.html)
-[https://ecommerce-playground.lambdatest.io/](https://ecommerce-playground.lambdatest.io/)
+- [https://www.saucedemo.com/v1/index.html](https://www.saucedemo.com/v1/index.html)
+- [https://ecommerce-playground.lambdatest.io/](https://ecommerce-playground.lambdatest.io/)
 
 ### Herramientas y lenguaje a usar
 - Navegador Instalado (Ej. Chrome, Firefox, Edge)
@@ -88,7 +88,7 @@ Y aqui solo resta darle Click al test que quieres ejecutar y este abrira tu test
 
 ### Importante
 
-####Este proceso aplica para todas las ramas.
+#### Este proceso aplica para todas las ramas.
 
 
 ### Troubleshooting
