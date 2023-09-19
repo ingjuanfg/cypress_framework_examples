@@ -17,6 +17,7 @@ Este proyecto esta creado con fines educativos. Contiene ejemplos desde los más
 ### Las páginas a usar son
 - [https://www.saucedemo.com/v1/index.html](https://www.saucedemo.com/v1/index.html)
 - [https://ecommerce-playground.lambdatest.io/](https://ecommerce-playground.lambdatest.io/)
+- [https://github.com/typicode/json-server](https://github.com/typicode/json-server)
 
 ### Herramientas y lenguaje a usar
 - Navegador Instalado (Ej. Chrome, Firefox, Edge)
@@ -35,6 +36,8 @@ Este proyecto esta creado con fines educativos. Contiene ejemplos desde los más
 	- Lectura de JSON
 	- Lectura de JSON con múltiple data
 	- Configuraciones en Cypress.config.js
+	- CRUD con API Local.
+	- Uso de Bearer Token, Key y Basic Authentication
 	
 - [page_object_v1](https://github.com/ingjuanfg/cypress_framework_examples/tree/page_object_v1): Esta rama toma el ejemplo de la rama main definido como linea base y se ajusta aplicando el patrón Page Object Model.
 
@@ -65,6 +68,44 @@ Y los siguientes plugins
 npm install -D cypress-xpath
 npm install -D cypress-plugin-tab
 ```
+
+### Para configurar la sección de API
+
+Se usará la API local mencionada arriba
+
+Ejecuta los siguientes comandos
+
+Clona el proyecto de la API en una ruta que desees
+
+```sh
+git clone https://github.com/typicode/json-server.git
+```
+
+Ingresa a la ruta y ejecuta estos comandos
+
+```sh
+npm install 
+```
+
+Y luego
+
+```sh
+npm install -g json-server
+```
+Una vez finalizada esta parte, puedes ejecutar la API con este comando
+
+```sh
+npm run start
+```
+
+Ingresa a la URL
+
+
+```sh
+http://localhost:3000
+```
+
+Y la API estará lista para usarse!
 
 Confirma que todo esta funcionando correctamente lanzando el siguiente comando.
 ```sh
