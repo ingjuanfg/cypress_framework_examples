@@ -38,6 +38,7 @@ Este proyecto esta creado con fines educativos. Contiene ejemplos desde los más
 	- Configuraciones en Cypress.config.js
 	- CRUD con API Local.
 	- Uso de Bearer Token, Key y Basic Authentication
+	- Cypress Session, Intercept y Stubs
 	
 - [page_object_v1](https://github.com/ingjuanfg/cypress_framework_examples/tree/page_object_v1): Esta rama toma el ejemplo de la rama main definido como linea base y se ajusta aplicando el patrón Page Object Model.
 
