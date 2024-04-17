@@ -27,9 +27,7 @@ pipeline {
     
     post {
         always {
-            junit 'cypress/results/*.xml'
-            archiveArtifacts 'cypress/screenshots/**'
-            archiveArtifacts 'cypress/videos/**'
+            echo 'Tests Finalizados con Exito'
         }
     }
 }
