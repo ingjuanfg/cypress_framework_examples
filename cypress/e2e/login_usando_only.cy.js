@@ -28,7 +28,7 @@ describe('Login en Saucedemo usando Cypress', () => {
     cy.get(".error-button").should('be.visible');
   })
 
-  it.only('Login Problema Performance Saucedemo', () => {
+  it('Login Problema Performance Saucedemo', () => {
     cy.visit('https://www.saucedemo.com/v1/index.html')
     cy.get("#user-name").type("performance_glitch_user")
     cy.get("#password").type("secret_sauce")
