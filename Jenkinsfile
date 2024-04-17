@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Clonar Repositorio') {
             steps {
-                git branch: 'main', url: 'https://github.com/ingjuanfg/cypress_framework_examples'
+                git branch: 'feature/cypress_pipeline', url: 'https://github.com/ingjuanfg/cypress_framework_examples'
             }
         }
         
