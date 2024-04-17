@@ -1,10 +1,5 @@
 pipeline {
     agent any
-
-    environment {
-        // Define el PATH para incluir la ruta de ejecutables npm
-        PATH = "${tool 'npm'}/bin:${env.PATH}"
-    }
  
     stages {
         stage('Clonar Repositorio') {
