@@ -20,7 +20,7 @@ describe('Login en Saucedemo usando Cypress', () => {
     cy.get(".product_label").should("contain.text", "Products");
   })
 
-  it('Login Usuario Bloqueado Saucedemo', () => {
+  it.only('Login Usuario Bloqueado Saucedemo', () => {
     cy.visit('https://www.saucedemo.com/v1/index.html')
     cy.get("#user-name").type("locked_out_user")
     cy.get("#password").type("secret_sauce")
