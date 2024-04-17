@@ -20,7 +20,7 @@ pipeline {
         
         stage('Ejecutar Pruebas') {
             steps {
-                bat 'npm run cypress:run -- --spec "cypress/e2e/*.js"'
+                bat 'npm run cypress:run -- --spec "cypress/e2e/*.js" > NUL'
             }
         }
     }
