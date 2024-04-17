@@ -1,5 +1,10 @@
 pipeline {
     agent any
+
+    environment {
+        // Define el PATH para incluir la ruta de ejecutables npm
+        PATH = "${tool 'npm'}/bin:${env.PATH}"
+    }
  
     stages {
         stage('Clonar Repositorio') {
@@ -10,17 +15,17 @@ pipeline {
         
         stage('Instalar Dependencias') {
             steps {
-                sh 'npm install'
-                sh 'npm install cypress --save-dev'
-                sh 'npm install -g npx'
-                sh 'npm install -D cypress-xpath'
-                sh 'npm install -D cypress-plugin-tab'
+                bat 'npm install'
+                bat 'npm install cypress --save-dev'
+                bat 'npm install -g npx'
+                bat 'npm install -D cypress-xpath'
+                bat 'npm install -D cypress-plugin-tab'
             }
         }
         
         stage('Ejecutar Pruebas') {
             steps {
-                sh 'npm run cypress:run -- --spec "cypress/e2e/*.js"'
+                bat 'npm run cypress:run -- --spec "cypress/e2e/*.js"'
             }
         }
     }
@@ -30,7 +35,6 @@ pipeline {
             junit 'cypress/results/*.xml'
             archiveArtifacts 'cypress/screenshots/**'
             archiveArtifacts 'cypress/videos/**'
-            cleanWs()
         }
     }
 }
